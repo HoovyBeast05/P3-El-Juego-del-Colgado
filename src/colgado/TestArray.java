@@ -10,6 +10,12 @@ public class TestArray {
 		Random r = new Random();
 		
 		String[] words = {"cono", "pene", "puta", "madre"};
+		
+		int rnd = new Random().nextInt(words.length);
+		
+		String rndWord = words[rnd];
+		
+		System.out.println(rndWord);
 
 	}
 
