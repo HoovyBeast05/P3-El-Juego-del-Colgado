@@ -14,6 +14,7 @@ public class ExtraTest {
 		String covered = word.replaceAll(".", "_");
 		char[] letterOfWord = word.toCharArray();
 		char[] coveredWord = covered.toCharArray();
+		boolean checker = false;
 		
 		System.out.println(covered);
 		System.out.println("Guess");
@@ -30,6 +31,21 @@ public class ExtraTest {
 				}
 			}
 			System.out.println(Arrays.toString(coveredWord));
+			
+			if(Arrays.equals(letterOfWord, coveredWord)) 
+			{
+				checker = true;
+				break;
+			}
+		}
+		
+		if(checker == true) 
+		{
+			System.out.println("You have found the word!!");
+		}
+		else if (checker == false)
+		{
+			System.out.println("You did not find the word in time");
 		}
 		
 
