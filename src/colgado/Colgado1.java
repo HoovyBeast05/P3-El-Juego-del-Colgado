@@ -10,12 +10,17 @@ public class Colgado1 {
 		
 		Scanner s = new Scanner(System.in);
 		
+		
+		
 		System.out.println("Welcome to the hanged man!!");
 		System.out.println("------------------------------------");
 		System.out.println("------------------------------------");
+		System.out.println("Every player has at least 6 tries to find the word");
+		System.out.println("How much players are playing?");
+		int numPlayers = s.nextInt();
 		
 		
-
+		
 	}
 
 }
